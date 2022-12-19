@@ -6,5 +6,5 @@ test('testing oportunity of applying method with !0 healt rank ', () => {
     const result = hero.damage(10);
     const expected = hero.health = 91;
 
-    expected(result).toBe(expected);
+    expect(result).toBe(expected);
 })

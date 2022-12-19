@@ -6,5 +6,5 @@ test('testing oportunity of applying method with 0 healt rank ', () => {
     const result = hero.levelUp();
     const expected = new Error('Нельзя повысить уровень умершего игрока');
 
-    expected(result).toThrow(expected);
+    expect(result).toThrow(expected);
 })

@@ -8,5 +8,5 @@ test('testing oportunity of applying method with !0 healt rank ', () => {
     const result = hero.levelUp();
     const expected = {name: 'vasya', type: 'Bowman', health: 100, level: 2, attack: 12, defense: 12};
 
-    expected(result).toEqual(expected);
+    expect(function(){result}).toEqual(expected);
 })

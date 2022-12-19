@@ -5,5 +5,5 @@ test('checking correct setting type of name', () => {
     const result = new Character('Ivan', type);
     const expected = new Error('Тип героя не соответсвует параметрам');
 
-    expected(result).toThrow(expected);
+    expect(function(){result}).toThrow(expected);
 })
